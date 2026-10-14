@@ -50,18 +50,26 @@ h1,h2,h3{font-weight:730}h1{letter-spacing:-.047em}h2{letter-spacing:-.038em}
 .homepage-editorial-card-copy h3{font-size:1.22rem;color:#122c42;margin:10px 0}
 .homepage-editorial-card-copy p{color:#57697a;font-size:.94rem;margin-bottom:0}
 @media(max-width:850px){.homepage-editorial-grid{grid-template-columns:1fr 1fr}}@media(max-width:580px){.homepage-editorial-grid{grid-template-columns:1fr}.homepage-editorial{padding:55px 0}}
+/* BK Aftermath unified global navigation v3 */
+.bk-header{position:sticky!important;top:0!important;z-index:200!important;background:rgba(255,255,255,.98)!important;border-bottom:1px solid #e0e7ed!important;box-shadow:0 5px 22px rgba(11,31,48,.07)!important;backdrop-filter:blur(12px)}
+.bk-header .bk-nav{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:18px!important;min-height:66px!important}
+.bk-header .bk-logo{display:flex;align-items:center;flex:none}
+.bk-header .bk-logo img{display:block!important;width:136px!important;height:auto!important;max-height:52px!important;object-fit:contain!important}
+.bk-header .bk-links{display:flex!important;align-items:center!important;gap:18px!important;font-size:.75rem!important;letter-spacing:.045em!important;text-transform:uppercase!important;font-weight:750!important}
+.bk-header .bk-links a:not(.bk-cta){display:block;position:relative;color:#33495b!important;padding:19px 0!important;white-space:nowrap!important;text-decoration:none!important}
+.bk-header .bk-links a:not(.bk-cta):after{content:"";position:absolute;height:2px;bottom:11px;left:0;width:0;background:#c8a66b;transition:width .2s}
+.bk-header .bk-links a:hover:after,.bk-header .bk-links a[aria-current="page"]:after{width:100%}
+.bk-header .bk-links a[aria-current="page"]{color:#123149!important}
+.bk-header .bk-links .bk-cta{display:inline-flex!important;align-items:center;justify-content:center;background:#122e46!important;color:white!important;border-radius:3px!important;padding:11px 14px!important;white-space:nowrap!important;text-decoration:none!important;font-size:.74rem!important;letter-spacing:.035em!important;transform:none!important}
+.bk-header .bk-links .bk-cta:hover{background:#28606b!important}
+.bk-header .bk-toggle{display:none!important;align-items:center;gap:9px;background:#fff!important;border:1px solid #d6e0e6!important;padding:9px 12px!important;color:#18374a!important;font:700 .83rem Inter,"Segoe UI",Arial,sans-serif!important;border-radius:3px!important;cursor:pointer}
+.bk-header .bk-mobile{display:none!important}
+@media(max-width:980px){.bk-header .bk-links{display:none!important}.bk-header .bk-toggle{display:inline-flex!important}.bk-header .bk-mobile.open{display:flex!important;flex-direction:column!important;gap:0!important;padding:8px 0 16px!important;border-top:1px solid #e1e7ec!important}.bk-header .bk-mobile a{display:block!important;padding:11px 6px!important;color:#193549!important;text-decoration:none!important;font-weight:700!important;font-size:.91rem!important;text-transform:none!important}.bk-header .bk-mobile a[aria-current="page"]{color:#36757c!important}.bk-header .bk-mobile a:last-child{border-top:1px solid #e1e7ec!important;margin-top:7px!important;padding-top:15px!important}}
+@media(max-width:480px){.bk-header .bk-nav{min-height:61px!important}.bk-header .bk-logo img{width:120px!important}}
 </style>
 </head>
 <body>
-  <header class="header">
-    <div class="wrap nav">
-      
-      <a class="logo" href="/" aria-label="BK Aftermath home"><img class="brand-image" src="/bk-aftermath-logo.png" alt="BK Aftermath"></a>
-      <nav class="navlinks" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="/our-approach.html">Our Approach</a><a href="/bankruptcy-clients.html">For Clients</a><a href="/law-firms.html">For Law Firms</a><a href="/#faq">Insights & FAQs</a><a class="button button-dark" href="/#contact">Partner Inquiry <span aria-hidden="true">↗</span></a></nav>
-      <button class="nav-toggle" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-links">Menu ☰</button>
-    </div>
-    <nav class="mobile-panel wrap" id="mobile-links" aria-label="Mobile navigation"><a href="/">Home</a><a href="/our-approach.html">Our Approach</a><a href="/bankruptcy-clients.html">For Clients</a><a href="/law-firms.html">For Law Firms</a><a href="/#faq">Insights & FAQs</a><a href="/#contact">Partner Inquiry</a></nav>
-  </header>
+  <header class="bk-header"><div class="wrap bk-nav"><a class="bk-logo" href="/" aria-label="BK Aftermath home"><img src="/bk-aftermath-logo.png" alt="BK Aftermath"></a><nav class="bk-links" aria-label="Main navigation"><a href="/" aria-current="page">Home</a><a href="/our-approach.html">Our Approach</a><a href="/law-firms.html">For Law Firms</a><a href="/bankruptcy-clients.html">For Clients</a><a href="/#faq">Insights & FAQs</a><a class="bk-cta" href="/law-firms.html#inquire">Partner Inquiry <span aria-hidden="true">↗</span></a></nav><button class="bk-toggle" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-links">Menu ☰</button></div><nav class="mobile-panel bk-mobile wrap" id="mobile-links" aria-label="Mobile navigation"><a href="/" aria-current="page">Home</a><a href="/our-approach.html">Our Approach</a><a href="/law-firms.html">For Law Firms</a><a href="/bankruptcy-clients.html">For Clients</a><a href="/#faq">Insights & FAQs</a><a href="/law-firms.html#inquire">Partner Inquiry</a></nav></header>
   <main id="home">
     <section class="hero"><div class="hero-inner">
       <div class="eyebrow">BK Aftermath • Responsible reporting administration</div>
