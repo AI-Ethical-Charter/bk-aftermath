@@ -16,6 +16,28 @@
 .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.975);border-bottom:1px solid #e2e8ee;box-shadow:0 5px 20px rgba(12,27,45,.055);backdrop-filter:blur(12px)}
 .nav{min-height:64px;gap:24px}.brand-image{width:138px;height:auto;max-height:53px;object-fit:contain}.navlinks{gap:30px;font-size:.81rem;letter-spacing:.035em;text-transform:uppercase;font-weight:700}.navlinks>a:not(.button){position:relative;padding:21px 0;color:#334558;white-space:nowrap}.navlinks>a:not(.button):after{content:"";position:absolute;bottom:12px;left:0;width:0;height:2px;background:var(--gold);transition:width .2s ease}.navlinks>a:hover:after,.navlinks>a[aria-current="page"]:after{width:100%}.navlinks>a[aria-current="page"]{color:#112940}.navlinks .button{font-size:.77rem;letter-spacing:.055em;padding:11px 16px;border-radius:3px;background:#132e46;color:white;white-space:nowrap}.navlinks .button:hover{background:#24516a;transform:none}.nav-toggle{font-size:.84rem;letter-spacing:.05em;text-transform:uppercase}.mobile-panel.open{border-top:1px solid #e7ebef}.mobile-panel a{font-weight:700;font-size:.9rem}
 @media(max-width:800px){.nav{min-height:62px}.brand-image{width:124px;max-height:49px}}
+
+/* Executive financial + institutional fintech identity */
+:root{--gold:#c8a66b;--cream:#f7f8fa;--line:#e0e7ed;--muted:#526477}
+body{font-family:Inter,"Segoe UI",Arial,Helvetica,sans-serif;letter-spacing:-.006em}
+h1,h2,h3{font-weight:730}h1{letter-spacing:-.047em}h2{letter-spacing:-.038em}
+.hero{background:linear-gradient(117deg,#081d31 4%,#17364e 65%,#23505a 100%)}.hero:after{opacity:.6}
+.eyebrow{letter-spacing:.16em}.section-alt{background:#f4f7f9}
+.card{border-radius:5px;border:1px solid #dfe6eb;box-shadow:0 10px 30px #12263b06}
+.symbol{border-radius:4px;background:#eaf2f2;color:#28666b}
+.panel{border-radius:5px;background:linear-gradient(140deg,#122e46,#1e4856)}.panel.light{background:#edf2f5}
+.button{border-radius:3px}.footer{background:#091d30}
+.brand-signature{background:#fff;border-bottom:1px solid #e1e7ec}
+.brand-signature-layout{display:grid;grid-template-columns:minmax(330px,.9fr) minmax(0,1.1fr);gap:75px;align-items:center;padding-top:66px;padding-bottom:66px}
+.brand-signature-art{min-height:260px;border:1px solid #e3e9ef;border-radius:5px;background:linear-gradient(138deg,#f7f9fa 0%,#fff 60%,#f2f6f7 100%);display:flex;justify-content:center;align-items:center;padding:32px 27px;box-shadow:0 20px 48px #0c22310b;position:relative;overflow:hidden}
+.brand-signature-art:before{content:"";position:absolute;inset:0;border-top:4px solid #c8a66b;pointer-events:none}
+.brand-signature-art img{position:relative;display:block;width:min(100%,420px);height:auto;object-fit:contain;filter:drop-shadow(0 8px 17px #17344911)}
+.brand-signature-copy h2{font-size:clamp(1.85rem,2.7vw,2.7rem);margin:15px 0 20px;color:#112940}
+.brand-signature-copy h2 em{font-style:normal;color:#39757b}
+.brand-signature-copy p{color:#536577;max-width:560px;line-height:1.75}
+.signature-link{display:inline-block;font-size:.85rem;font-weight:800;color:#173e50;text-transform:uppercase;letter-spacing:.055em;border-bottom:2px solid #c8a66b;padding:5px 0;margin-top:9px}
+.signature-link:hover{color:#327c7c}
+@media(max-width:800px){.brand-signature-layout{grid-template-columns:1fr;gap:27px;padding-top:42px;padding-bottom:48px}.brand-signature-art{min-height:210px}.brand-signature-art img{width:min(100%,330px)}}
 </style>
 </head>
 <body>
@@ -35,6 +57,19 @@
       <p>BK Aftermath is developing a third-party credit-data reporting administration service for bankruptcy law firms. Participating firms retain ownership of genuine attorney-fee receivables; our proposed role is validation, Metro 2 support, quality control, and dispute coordination under approved arrangements.</p>
       <div class="actions"><a href="#services" class="button">Explore Our Services →</a><a href="#partners" class="button button-outline">For Law Firms</a></div>
     </div></section>
+    <section class="brand-signature" aria-label="BK Aftermath brand and positioning">
+      <div class="wrap brand-signature-layout">
+        <div class="brand-signature-art">
+          <img src="/bk-aftermath-logo.png" alt="BK Aftermath — bankruptcy law firm reporting administration" width="480" height="180" loading="eager">
+        </div>
+        <div class="brand-signature-copy">
+          <span class="eyebrow">Purpose-built for bankruptcy law firms</span>
+          <h2>Specialized reporting administration.<br><em>Institutional standards.</em></h2>
+          <p>We bring a disciplined, evidence-first approach to the complex intersection of attorney-fee agreements, bankruptcy law and credit-data operations.</p>
+          <a class="signature-link" href="/our-approach.html">Discover our approach <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
     <section class="section" id="about"><div class="wrap">
       <div class="intro"><span class="eyebrow">A stronger way forward</span><h2>Accuracy starts with a real agreement.</h2><p>Our approach centers on accurate reporting of legally eligible bankruptcy attorney-fee payment obligations, not promises of credit-score improvement or manufactured payment history.</p></div>
       <div class="grid">
